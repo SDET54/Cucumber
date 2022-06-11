@@ -1,6 +1,6 @@
 Feature: US1005 dogru kullanici adi ve sifre ile giris yapilabilmeli
 
-  @smoke @regression @haftalik
+
   Scenario: TC08 positive login test
     Given kullanici "hMcUrl" sayfasinda
     Then Log in yazisina tiklar

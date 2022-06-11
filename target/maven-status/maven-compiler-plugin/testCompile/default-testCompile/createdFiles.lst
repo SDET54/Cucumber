@@ -10,6 +10,7 @@ pages\AmazonPage.class
 runners\TestRunner.class
 utilities\Driver.class
 stepDefinitions\Hooks.class
+runners\TestRunner2.class
 stepDefinitions\HerokuappStepDefinitions.class
 utilities\ConfigReader.class
 stepDefinitions\GuruStepDefinitions.class

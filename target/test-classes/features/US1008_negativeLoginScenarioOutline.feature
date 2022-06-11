@@ -1,6 +1,6 @@
 Feature: US1008 kullanici farkli yanlis sifre ve kullanici adi ile giris yapamaz
 
-  @hmcnegative
+
   Scenario Outline: TC13 yanlis kullanici adi ve sifrelerle ile giris yapilamaz
     Given kullanici "hMcUrl" sayfasinda
     Then Log in yazisina tiklar

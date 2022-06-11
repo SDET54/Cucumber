@@ -1,10 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="71.374">
-    <testcase classname="US1003 kullanici parametre kullanarak arama yapabilmeli" name="TC06 kullanici parametre ile amazonda arama yapabilmeli" time="70.476">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="136.259">
+    <testcase classname="US1001 Kullanici Amazon Sayfasinda arama yapar" name="TC01 kullanici amazonda kelime aratir" time="57.4">
         <system-out>
             <![CDATA[Given kullanici amazon anasayfasinda........................................passed
-And kullanici "Java" icin arama yapar.......................................passed
-And sonuclarin "Java" icerdigini test eder..................................passed
+Then kullanici Nutella icin arama yapar.....................................passed
+And sonuclarin Nutella icerdigini test eder.................................passed
+And sayfayi kapatir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1001 Kullanici Amazon Sayfasinda arama yapar" name="TC03 kullanici iphone aratir" time="45.205">
+        <system-out>
+            <![CDATA[When kullanici amazon anasayfasinda.........................................passed
+And kullanici Iphone icin arama yapar.......................................passed
+Then sonuclarin Iphone icerdigini test eder.................................passed
+And sayfayi kapatir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1004 kullanici parametre ile configuration file'i kullanabilmeli" name="TC07 configuration properties dosyasindan parametre kullanimi" time="32.853">
+        <system-out>
+            <![CDATA[Given kullanici "techproeducationUrl" sayfasinda............................passed
+Then kullanici 3 sn bekler..................................................passed
+And url'in "techpro" icerdigini test eder...................................passed
 Then sayfayi kapatir........................................................passed
 ]]>
         </system-out>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="128.003">
+    <testcase classname="US1001 Kullanici Amazon Sayfasinda arama yapar" name="TC02 kullanici amazonda Java aratir" time="56.955">
+        <system-out>
+            <![CDATA[Given kullanici amazon anasayfasinda........................................passed
+Then kullanici Java icin arama yapar........................................passed
+And sonuclarin Java icerdigini test eder....................................passed
+And sayfayi kapatir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1003 kullanici parametre kullanarak arama yapabilmeli" name="TC06 kullanici parametre ile amazonda arama yapabilmeli" time="44.054">
+        <system-out>
+            <![CDATA[Given kullanici amazon anasayfasinda........................................passed
+And kullanici "Java" icin arama yapar.......................................passed
+And sonuclarin "Java" icerdigini test eder..................................passed
+Then sayfayi kapatir........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Tutorialsninja Phones" name="TC00 kullanici tutorialsninja sayfasinda telefonlari kontrol eder" time="26.182">
+        <system-out>
+            <![CDATA[Given Navigate to tutorialsninja............................................passed
+Then click on Phones & PDAs.................................................passed
+And get the brandName of phones.............................................passed
+Then click on add to button for all elements................................passed
+Then click on black total added cart button.................................passed
+And get the names of list from the cart.....................................passed
+And compare the names from displaying list and cart list....................passed
+And close page..............................................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

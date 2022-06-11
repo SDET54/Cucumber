@@ -1,5 +1,6 @@
 Feature: Tutorialsninja Phones
 
+  @pr1
   Scenario: TC00 kullanici tutorialsninja sayfasinda telefonlari kontrol eder
     Given Navigate to tutorialsninja
     Then click on Phones & PDAs
