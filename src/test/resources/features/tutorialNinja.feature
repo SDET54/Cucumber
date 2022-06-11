@@ -1,6 +1,6 @@
 Feature: Tutorialsninja Phones
 
-  Scenario: TC01 kullanici tutorialsninja sayfasinda telefonlari kontrol eder
+  Scenario: TC00 kullanici tutorialsninja sayfasinda telefonlari kontrol eder
     Given Navigate to tutorialsninja
     Then click on Phones & PDAs
     And get the brandName of phones

@@ -22,7 +22,7 @@ public class TutorialsninjaPage {
     @FindBy(xpath = "//*[text()='Add to Cart']")
     public List<WebElement> addToCartElements;
 
-    @FindBy (xpath = "//div[@id='cart']")
+    @FindBy(xpath = "//div[@id='cart']")
     public WebElement totalCartElement;
 
     @FindBy(xpath = "//*[@id='cart']//table/tbody//td[2]/a")

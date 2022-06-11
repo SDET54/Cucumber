@@ -11,7 +11,7 @@ import utilities.Driver;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class Tutorialsninja_PhonesPDAs {
+public class TutorialsninjaStepDefinitions {
 
     /*
   ~ Navigate to http://tutorialsninja.com/demo/index.php?route=common/home
