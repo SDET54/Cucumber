@@ -9,8 +9,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = "stepDefinitions",
-        tags = "@datatables",
-        dryRun = false
+        tags = "@heroku",
+        dryRun = true
 )
 
 public class Runner {
