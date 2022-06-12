@@ -10,7 +10,6 @@ import pages.AutomationPage;
 import utilities.Driver;
 
 public class AutomationStepDefinitions {
-
     AutomationPage atp = new AutomationPage();
     Faker faker = new Faker();
     String firstName = faker.name().firstName();
