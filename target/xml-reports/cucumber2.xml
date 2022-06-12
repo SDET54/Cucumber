@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="128.003">
-    <testcase classname="US1001 Kullanici Amazon Sayfasinda arama yapar" name="TC02 kullanici amazonda Java aratir" time="56.955">
-        <system-out>
-            <![CDATA[Given kullanici amazon anasayfasinda........................................passed
-Then kullanici Java icin arama yapar........................................passed
-And sonuclarin Java icerdigini test eder....................................passed
-And sayfayi kapatir.........................................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="US1003 kullanici parametre kullanarak arama yapabilmeli" name="TC06 kullanici parametre ile amazonda arama yapabilmeli" time="44.054">
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="109.022">
+    <testcase classname="US1003 kullanici parametre kullanarak arama yapabilmeli" name="TC06 kullanici parametre ile amazonda arama yapabilmeli" time="89.269">
         <system-out>
             <![CDATA[Given kullanici amazon anasayfasinda........................................passed
 And kullanici "Java" icin arama yapar.......................................passed
@@ -18,17 +9,43 @@ Then sayfayi kapatir........................................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Tutorialsninja Phones" name="TC00 kullanici tutorialsninja sayfasinda telefonlari kontrol eder" time="26.182">
-        <system-out>
+    <testcase classname="Tutorialsninja Phones" name="TC00 kullanici tutorialsninja sayfasinda telefonlari kontrol eder" time="18.707">
+        <failure message="element click intercepted: Element &lt;span class=&quot;hidden-xs hidden-sm hidden-md&quot;&gt;...&lt;/span&gt; is not clickable at point (776, 614). Other element would receive the click: &lt;img src=&quot;http://tutorialsninja.com/demo/image/cache/catalog/demo/iphone_1-228x228.jpg&quot; alt=&quot;iPhone&quot; title=&quot;iPhone&quot; class=&quot;img-responsive&quot;&gt;&#10;  (Session info: chrome=102.0.5005.115)&#10;Build info: version: '4.1.4', revision: '535d840ee2'&#10;System info: host: 'DESKTOP-KB36E7L', ip: '192.168.100.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [6749209d263dca1e7a1f6d5a54243dcf, clickElement {id=c8b17677-40f1-477e-b304-9012ec2b918a}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Vaska\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49211}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49211/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (6749209d263dca1e7a1f6d5a54243dcf)] -&gt; xpath: //*[text()='Add to Cart']]&#10;Session ID: 6749209d263dca1e7a1f6d5a54243dcf" type="org.openqa.selenium.ElementClickInterceptedException">
             <![CDATA[Given Navigate to tutorialsninja............................................passed
 Then click on Phones & PDAs.................................................passed
 And get the brandName of phones.............................................passed
-Then click on add to button for all elements................................passed
-Then click on black total added cart button.................................passed
-And get the names of list from the cart.....................................passed
-And compare the names from displaying list and cart list....................passed
-And close page..............................................................passed
+Then click on add to button for all elements................................failed
+Then click on black total added cart button.................................skipped
+And get the names of list from the cart.....................................skipped
+And compare the names from displaying list and cart list....................skipped
+And close page..............................................................skipped
+
+StackTrace:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="hidden-xs hidden-sm hidden-md">...</span> is not clickable at point (776, 614). Other element would receive the click: <img src="http://tutorialsninja.com/demo/image/cache/catalog/demo/iphone_1-228x228.jpg" alt="iPhone" title="iPhone" class="img-responsive">
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'DESKTOP-KB36E7L', ip: '192.168.100.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6749209d263dca1e7a1f6d5a54243dcf, clickElement {id=c8b17677-40f1-477e-b304-9012ec2b918a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Vaska\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49211}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49211/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (6749209d263dca1e7a1f6d5a54243dcf)] -> xpath: //*[text()='Add to Cart']]
+Session ID: 6749209d263dca1e7a1f6d5a54243dcf
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at stepDefinitions.TutorialsninjaStepDefinitions.click_on_add_to_button_for_all_elements(TutorialsninjaStepDefinitions.java:46)
+	at ✽.click on add to button for all elements(file:///C:/Users/Vaska/IdeaProjects/com.Cucumber/src/test/resources/features/tutorialNinja.feature:8)
 ]]>
-        </system-out>
+        </failure>
     </testcase>
 </testsuite>

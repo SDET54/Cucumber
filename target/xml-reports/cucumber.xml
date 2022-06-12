@@ -1,30 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="136.259">
-    <testcase classname="US1001 Kullanici Amazon Sayfasinda arama yapar" name="TC01 kullanici amazonda kelime aratir" time="57.4">
-        <system-out>
-            <![CDATA[Given kullanici amazon anasayfasinda........................................passed
-Then kullanici Nutella icin arama yapar.....................................passed
-And sonuclarin Nutella icerdigini test eder.................................passed
-And sayfayi kapatir.........................................................passed
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.721">
+    <testcase classname="US1012 Kullanici register yapabilmeli" name="TC17 kullanici uygun datalarla register olabilmeli" time="0.087">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
+            <![CDATA[Given kullanici "automationUrl" sayfasinda..................................passed
+And user sign in linkine tiklar.............................................undefined
+And user Create and account bolumune email adresi girer.....................skipped
+And Create an Account butonuna basar........................................skipped
+And user kisisel bilgilerini ve iletisim bilgilerini girer..................skipped
+And user Register butonuna basar............................................skipped
+Then hesap olustugunu dogrular..............................................skipped
 ]]>
-        </system-out>
-    </testcase>
-    <testcase classname="US1001 Kullanici Amazon Sayfasinda arama yapar" name="TC03 kullanici iphone aratir" time="45.205">
-        <system-out>
-            <![CDATA[When kullanici amazon anasayfasinda.........................................passed
-And kullanici Iphone icin arama yapar.......................................passed
-Then sonuclarin Iphone icerdigini test eder.................................passed
-And sayfayi kapatir.........................................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="US1004 kullanici parametre ile configuration file'i kullanabilmeli" name="TC07 configuration properties dosyasindan parametre kullanimi" time="32.853">
-        <system-out>
-            <![CDATA[Given kullanici "techproeducationUrl" sayfasinda............................passed
-Then kullanici 3 sn bekler..................................................passed
-And url'in "techpro" icerdigini test eder...................................passed
-Then sayfayi kapatir........................................................passed
-]]>
-        </system-out>
+        </failure>
     </testcase>
 </testsuite>
