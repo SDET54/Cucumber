@@ -48,7 +48,7 @@ public class AutomationStepDefinitions {
                 .sendKeys("50000", Keys.TAB)
                 .sendKeys("United States", Keys.TAB)
                 .sendKeys(faker.lorem().sentence(5), Keys.TAB, Keys.TAB)
-                .sendKeys(faker.phoneNumber().phoneNumber(), Keys.TAB)
+                .sendKeys(faker.phoneNumber().cellPhone(), Keys.TAB)
                 .sendKeys("Home")
                 .perform();
     }
