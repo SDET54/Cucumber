@@ -1,8 +1,7 @@
+@tekrar1
 Feature: US1012 Kullanici register yapabilmeli
 
-  @aut
   Scenario: TC17 kullanici uygun datalarla register olabilmeli
-
     Given kullanici "automationUrl" sayfasinda
     And user sign in linkine tiklar
     And user Create and account bolumune email adresi girer

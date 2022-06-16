@@ -50,9 +50,9 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                15,
-                1,
-                4,
+                178,
+                0,
+                0,
                 0,
                 0
             ],
@@ -93,7 +93,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 20) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 178) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -106,8 +106,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                3,
-                1
+                31,
+                0
             ],
             backgroundColor: [
                 "#00B000",
@@ -140,7 +140,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 4) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 31) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -153,8 +153,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                   3,
-                   1
+                   14,
+                   0
                ],
                backgroundColor: [
                 "#00B000",
@@ -187,7 +187,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 4) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 14) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -230,7 +230,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>cucumber-jvm-example</td>
         <td>1</td>
-      <td>12 Jun 2022, 13:01</td>
+      <td>12 Jun 2022, 16:13</td>
     </tr>
   </tbody>
 </table>
@@ -325,20 +325,20 @@ $(document).ready(function() {
 
   <tbody>
       <tr>
-        <td class="tagname"><a href="report-feature_1979244224.html">US1001 Kullanici Amazon Sayfasinda arama yapar</a></td>
+        <td class="tagname"><a href="report-feature_417709916.html">US1002 Kullanici ortak adimlari Background ile calistirir</a></td>
 
-        <td      class="passed"    >4</td>
+        <td      class="passed"    >12</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">4</td>
+        <td class="total">12</td>
 
-        <td  class="passed"    >1</td>
+        <td  class="passed"    >3</td>
         <td >0</td>
-        <td class="total">1</td>
+        <td class="total">3</td>
 
-        <td class="duration" data-value="84448211200">1:24.448</td>
+        <td class="duration" data-value="97246930600">1:37.246</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
@@ -355,11 +355,113 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="37003515600">37.003</td>
+        <td class="duration" data-value="34990936000">34.990</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_2_1841912273.html">US1003 kullanici parametre kullanarak arama yapabilmeli</a></td>
+        <td class="tagname"><a href="report-feature_2_60422306.html">US1006 yanlis bilgilerle siteye giris yapilamaz</a></td>
+
+        <td      class="passed"    >21</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">21</td>
+
+        <td  class="passed"    >3</td>
+        <td >0</td>
+        <td class="total">3</td>
+
+        <td class="duration" data-value="45955110300">45.955</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_3_253484555.html">US1008 kullanici farkli yanlis sifre ve kullanici adi ile giris yapamaz</a></td>
+
+        <td      class="passed"    >35</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">35</td>
+
+        <td  class="passed"    >5</td>
+        <td >0</td>
+        <td class="total">5</td>
+
+        <td class="duration" data-value="75570654700">1:15.570</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_4_1192610662.html">US1010 herokuapp Delete testi</a></td>
+
+        <td      class="passed"    >8</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">8</td>
+
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="32021416300">32.021</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_5_3979602342.html">US1012 Kullanici register yapabilmeli</a></td>
+
+        <td      class="passed"    >7</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">7</td>
+
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="24947974700">24.947</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_6_2407347999.html">Tutorialsninja Phones</a></td>
+
+        <td      class="passed"    >8</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">8</td>
+
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="20608277500">20.608</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_7_1979244224.html">US1001 Kullanici Amazon Sayfasinda arama yapar</a></td>
+
+        <td      class="passed"    >12</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">12</td>
+
+        <td  class="passed"    >3</td>
+        <td >0</td>
+        <td class="total">3</td>
+
+        <td class="duration" data-value="99443596800">1:39.443</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_8_1841912273.html">US1003 kullanici parametre kullanarak arama yapabilmeli</a></td>
 
         <td      class="passed"    >4</td>
         <td >0</td>
@@ -372,58 +474,126 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="80529370700">1:20.529</td>
+        <td class="duration" data-value="31255381300">31.255</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_3_2407347999.html">Tutorialsninja Phones</a></td>
+        <td class="tagname"><a href="report-feature_9_3028952383.html">US1005 dogru kullanici adi ve sifre ile giris yapilabilmeli</a></td>
 
-        <td      class="passed"    >3</td>
-        <td      class="failed"    >1</td>
-        <td     class="skipped"   >4</td>
+        <td      class="passed"    >7</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">8</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">7</td>
 
+        <td  class="passed"    >1</td>
         <td >0</td>
-        <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="17057434600">17.057</td>
-        <td class="failed">Failed</td>
+        <td class="duration" data-value="24521612900">24.521</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_10_2092125994.html">US1007 kullanici amazonda istedigi kelimeleri aratir</a></td>
+
+        <td      class="passed"    >16</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">16</td>
+
+        <td  class="passed"    >4</td>
+        <td >0</td>
+        <td class="total">4</td>
+
+        <td class="duration" data-value="94600729000">1:34.600</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_11_1159849943.html">US1009 Datatables sitesine 5 farkli giris yapalim</a></td>
+
+        <td      class="passed"    >35</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">35</td>
+
+        <td  class="passed"    >5</td>
+        <td >0</td>
+        <td class="total">5</td>
+
+        <td class="duration" data-value="62447245200">1:2.447</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_12_1810515768.html">US1011 web tablasundaki istenen sutunu yazdirma</a></td>
+
+        <td      class="passed"    >4</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">4</td>
+
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="14706687200">14.706</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_13_2004696764.html">US1013 kullanici excel bilgilerine ulasir</a></td>
+
+        <td      class="passed"    >5</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">5</td>
+
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="6691225400">6.691</td>
+        <td class="passed">Passed</td>
       </tr>
   </tbody>
 
   <tfoot class="total">
     <tr>
       <td></td>
-      <td>15</td>
-      <td>1</td>
-      <td>4</td>
+      <td>178</td>
       <td>0</td>
       <td>0</td>
-      <td>20</td>
+      <td>0</td>
+      <td>0</td>
+      <td>178</td>
 
-      <td>3</td>
-      <td>1</td>
-      <td>4</td>
+      <td>31</td>
+      <td>0</td>
+      <td>31</td>
 
-      <td class="duration">3:39.038</td>
-      <td>4</td>
+      <td class="duration">11:5.007</td>
+      <td>14</td>
     </tr>
     <tr>
       <td></td>
-      <td>75.00%</td>
-      <td>5.00%</td>
-      <td>20.00%</td>
+      <td>100.00%</td>
+      <td>0.00%</td>
+      <td>0.00%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
-      <td>75.00%</td>
-      <td>25.00%</td>
+      <td>100.00%</td>
+      <td>0.00%</td>
       <td></td>
       <td></td>
-      <td>75.00%</td>
+      <td>100.00%</td>
     </tr>
   </tfoot>
 </table>

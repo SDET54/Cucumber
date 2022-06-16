@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="109.022">
-    <testcase classname="US1003 kullanici parametre kullanarak arama yapabilmeli" name="TC06 kullanici parametre ile amazonda arama yapabilmeli" time="89.269">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="16" time="404.897">
+    <testcase classname="US1001 Kullanici Amazon Sayfasinda arama yapar" name="TC01 kullanici amazonda kelime aratir" time="58.524">
+        <system-out>
+            <![CDATA[Given kullanici amazon anasayfasinda........................................passed
+Then kullanici Nutella icin arama yapar.....................................passed
+And sonuclarin Nutella icerdigini test eder.................................passed
+And sayfayi kapatir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1001 Kullanici Amazon Sayfasinda arama yapar" name="TC02 kullanici amazonda Java aratir" time="28.908">
+        <system-out>
+            <![CDATA[Given kullanici amazon anasayfasinda........................................passed
+Then kullanici Java icin arama yapar........................................passed
+And sonuclarin Java icerdigini test eder....................................passed
+And sayfayi kapatir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1001 Kullanici Amazon Sayfasinda arama yapar" name="TC03 kullanici iphone aratir" time="24.8">
+        <system-out>
+            <![CDATA[When kullanici amazon anasayfasinda.........................................passed
+And kullanici Iphone icin arama yapar.......................................passed
+Then sonuclarin Iphone icerdigini test eder.................................passed
+And sayfayi kapatir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1003 kullanici parametre kullanarak arama yapabilmeli" name="TC06 kullanici parametre ile amazonda arama yapabilmeli" time="34.385">
         <system-out>
             <![CDATA[Given kullanici amazon anasayfasinda........................................passed
 And kullanici "Java" icin arama yapar.......................................passed
@@ -9,43 +36,131 @@ Then sayfayi kapatir........................................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Tutorialsninja Phones" name="TC00 kullanici tutorialsninja sayfasinda telefonlari kontrol eder" time="18.707">
-        <failure message="element click intercepted: Element &lt;span class=&quot;hidden-xs hidden-sm hidden-md&quot;&gt;...&lt;/span&gt; is not clickable at point (776, 614). Other element would receive the click: &lt;img src=&quot;http://tutorialsninja.com/demo/image/cache/catalog/demo/iphone_1-228x228.jpg&quot; alt=&quot;iPhone&quot; title=&quot;iPhone&quot; class=&quot;img-responsive&quot;&gt;&#10;  (Session info: chrome=102.0.5005.115)&#10;Build info: version: '4.1.4', revision: '535d840ee2'&#10;System info: host: 'DESKTOP-KB36E7L', ip: '192.168.100.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [6749209d263dca1e7a1f6d5a54243dcf, clickElement {id=c8b17677-40f1-477e-b304-9012ec2b918a}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Vaska\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49211}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49211/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (6749209d263dca1e7a1f6d5a54243dcf)] -&gt; xpath: //*[text()='Add to Cart']]&#10;Session ID: 6749209d263dca1e7a1f6d5a54243dcf" type="org.openqa.selenium.ElementClickInterceptedException">
-            <![CDATA[Given Navigate to tutorialsninja............................................passed
-Then click on Phones & PDAs.................................................passed
-And get the brandName of phones.............................................passed
-Then click on add to button for all elements................................failed
-Then click on black total added cart button.................................skipped
-And get the names of list from the cart.....................................skipped
-And compare the names from displaying list and cart list....................skipped
-And close page..............................................................skipped
-
-StackTrace:
-org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="hidden-xs hidden-sm hidden-md">...</span> is not clickable at point (776, 614). Other element would receive the click: <img src="http://tutorialsninja.com/demo/image/cache/catalog/demo/iphone_1-228x228.jpg" alt="iPhone" title="iPhone" class="img-responsive">
-  (Session info: chrome=102.0.5005.115)
-Build info: version: '4.1.4', revision: '535d840ee2'
-System info: host: 'DESKTOP-KB36E7L', ip: '192.168.100.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6749209d263dca1e7a1f6d5a54243dcf, clickElement {id=c8b17677-40f1-477e-b304-9012ec2b918a}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Vaska\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49211}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49211/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (6749209d263dca1e7a1f6d5a54243dcf)] -> xpath: //*[text()='Add to Cart']]
-Session ID: 6749209d263dca1e7a1f6d5a54243dcf
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at stepDefinitions.TutorialsninjaStepDefinitions.click_on_add_to_button_for_all_elements(TutorialsninjaStepDefinitions.java:46)
-	at ✽.click on add to button for all elements(file:///C:/Users/Vaska/IdeaProjects/com.Cucumber/src/test/resources/features/tutorialNinja.feature:8)
+    <testcase classname="US1005 dogru kullanici adi ve sifre ile giris yapilabilmeli" name="TC08 positive login test" time="27.853">
+        <system-out>
+            <![CDATA[Given kullanici "hMcUrl" sayfasinda.........................................passed
+Then Log in yazisina tiklar.................................................passed
+And gecerli username girer..................................................passed
+And gecerli password girer..................................................passed
+And Login butonuna basar....................................................passed
+Then sayfaya giris yaptigini kontrol eder...................................passed
+And sayfayi kapatir.........................................................passed
 ]]>
-        </failure>
+        </system-out>
+    </testcase>
+    <testcase classname="US1007 kullanici amazonda istedigi kelimeleri aratir" name="TC12 amazonda listedeki elementleri aratma" time="34.222">
+        <system-out>
+            <![CDATA[Given kullanici "amazonUrl" sayfasinda......................................passed
+Then kullanici "nutella" icin arama yapar...................................passed
+And sonuclarin "nutella" icerdigini test eder...............................passed
+And sayfayi kapatir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1007 kullanici amazonda istedigi kelimeleri aratir" name="TC12 amazonda listedeki elementleri aratma 2" time="29.467">
+        <system-out>
+            <![CDATA[Given kullanici "amazonUrl" sayfasinda......................................passed
+Then kullanici "java" icin arama yapar......................................passed
+And sonuclarin "java" icerdigini test eder..................................passed
+And sayfayi kapatir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1007 kullanici amazonda istedigi kelimeleri aratir" name="TC12 amazonda listedeki elementleri aratma 3" time="26.97">
+        <system-out>
+            <![CDATA[Given kullanici "amazonUrl" sayfasinda......................................passed
+Then kullanici "elma" icin arama yapar......................................passed
+And sonuclarin "elma" icerdigini test eder..................................passed
+And sayfayi kapatir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1007 kullanici amazonda istedigi kelimeleri aratir" name="TC12 amazonda listedeki elementleri aratma 4" time="29.128">
+        <system-out>
+            <![CDATA[Given kullanici "amazonUrl" sayfasinda......................................passed
+Then kullanici "armut" icin arama yapar.....................................passed
+And sonuclarin "armut" icerdigini test eder.................................passed
+And sayfayi kapatir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1009 Datatables sitesine 5 farkli giris yapalim" name="TC14 kullanici 5 farkli kayit girisi yapabilmeli" time="19.486">
+        <system-out>
+            <![CDATA[Given kullanici "datatablesUrl" sayfasinda..................................passed
+Then new butonuna basar.....................................................passed
+And kullanici "Alim" "Alim" "qa" "ankara" "UI" "2021-10-11" "10000".........passed
+And Create tusuna basar.....................................................passed
+When kullanici "Alim" ile arama yapar.......................................passed
+Then isim bolumunde "Alim" oldugunu dogrular................................passed
+And sayfayi kapatir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1009 Datatables sitesine 5 farkli giris yapalim" name="TC14 kullanici 5 farkli kayit girisi yapabilmeli 2" time="17.059">
+        <system-out>
+            <![CDATA[Given kullanici "datatablesUrl" sayfasinda..................................passed
+Then new butonuna basar.....................................................passed
+And kullanici "Berk" "Can" "tester" "ankara" "api" "2022-05-05" "11000".....passed
+And Create tusuna basar.....................................................passed
+When kullanici "Berk" ile arama yapar.......................................passed
+Then isim bolumunde "Berk" oldugunu dogrular................................passed
+And sayfayi kapatir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1009 Datatables sitesine 5 farkli giris yapalim" name="TC14 kullanici 5 farkli kayit girisi yapabilmeli 3" time="10.937">
+        <system-out>
+            <![CDATA[Given kullanici "datatablesUrl" sayfasinda..................................passed
+Then new butonuna basar.....................................................passed
+And kullanici "Huseyin" "Kacmaz" "BA" "berlin" "-" "2022-07-10" "40000".....passed
+And Create tusuna basar.....................................................passed
+When kullanici "Huseyin" ile arama yapar....................................passed
+Then isim bolumunde "Huseyin" oldugunu dogrular.............................passed
+And sayfayi kapatir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1009 Datatables sitesine 5 farkli giris yapalim" name="TC14 kullanici 5 farkli kayit girisi yapabilmeli 4" time="15.996">
+        <system-out>
+            <![CDATA[Given kullanici "datatablesUrl" sayfasinda..................................passed
+Then new butonuna basar.....................................................passed
+And kullanici "Fatih" "Sahin" "PO" "berlin" "-" "2022-03-12" "45000"........passed
+And Create tusuna basar.....................................................passed
+When kullanici "Fatih" ile arama yapar......................................passed
+Then isim bolumunde "Fatih" oldugunu dogrular...............................passed
+And sayfayi kapatir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1009 Datatables sitesine 5 farkli giris yapalim" name="TC14 kullanici 5 farkli kayit girisi yapabilmeli 5" time="17.035">
+        <system-out>
+            <![CDATA[Given kullanici "datatablesUrl" sayfasinda..................................passed
+Then new butonuna basar.....................................................passed
+And kullanici "Ahmet" "Kaya" "Tester" "ankara" "database" "2022-06-06" "11000".passed
+And Create tusuna basar.....................................................passed
+When kullanici "Ahmet" ile arama yapar......................................passed
+Then isim bolumunde "Ahmet" oldugunu dogrular...............................passed
+And sayfayi kapatir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1011 web tablasundaki istenen sutunu yazdirma" name="TC16 kullanici sutun basligi ile liste alabilmeli" time="18.564">
+        <system-out>
+            <![CDATA[Given kullanici "guruUrl" sayfasinda........................................passed
+And kullanici 3 sn bekler...................................................passed
+And "Company", sutunundaki tum degerleri yazdirir...........................passed
+Then sayfayi kapatir........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1013 kullanici excel bilgilerine ulasir" name="TC18 kullanici excel bilgilerini kullanir" time="9.963">
+        <system-out>
+            <![CDATA[Given kullanici excel dosyasini kullanilabilir hale getirir.................passed
+Then 1.satirdaki 2.hucreyi yazdirir.........................................passed
+And baskenti Jakarta olan ulke ismini yazdirir..............................passed
+And Ulke sayisinin 190 oldugunu test eder...................................passed
+And Fiziki olarak kullanilan satir sayisinin 191 oldugunu test eder.........passed
+]]>
+        </system-out>
     </testcase>
 </testsuite>

@@ -1,6 +1,6 @@
+@tekrar2
 Feature: US1003 kullanici parametre kullanarak arama yapabilmeli
 
-  @pr1
   Scenario: TC06 kullanici parametre ile amazonda arama yapabilmeli
     Given kullanici amazon anasayfasinda
     And kullanici "Java" icin arama yapar

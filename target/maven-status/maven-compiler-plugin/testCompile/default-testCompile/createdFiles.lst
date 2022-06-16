@@ -1,9 +1,11 @@
+stepDefinitions\AutomationStepDefinitions.class
 stepDefinitions\HotelmycampStepDefinitions.class
 stepDefinitions\AmazonStepDefinitions.class
 stepDefinitions\DatatablesStepDefinitions.class
 pages\GuruPage.class
 pages\DatatablesPage.class
 pages\HotelmycampPage.class
+pages\AutomationPage.class
 pages\TutorialsninjaPage.class
 pages\HerokuappPage.class
 pages\AmazonPage.class
@@ -11,6 +13,7 @@ runners\TestRunner.class
 utilities\Driver.class
 stepDefinitions\Hooks.class
 runners\TestRunner2.class
+stepDefinitions\ExcelStepDefinitions.class
 stepDefinitions\HerokuappStepDefinitions.class
 utilities\ConfigReader.class
 stepDefinitions\GuruStepDefinitions.class

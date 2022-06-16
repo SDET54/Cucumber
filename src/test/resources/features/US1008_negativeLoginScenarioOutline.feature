@@ -1,5 +1,5 @@
+@tekrar1
 Feature: US1008 kullanici farkli yanlis sifre ve kullanici adi ile giris yapamaz
-
 
   Scenario Outline: TC13 yanlis kullanici adi ve sifrelerle ile giris yapilamaz
     Given kullanici "hMcUrl" sayfasinda

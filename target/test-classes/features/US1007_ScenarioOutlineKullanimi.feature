@@ -1,8 +1,5 @@
-# amazon sayfasina gidip sirasiyla nutella, java, elma, armut aratip
-# sonuclarin arama yaptigimiz kelimeyi icerdigini test edelim
-
+@tekrar2
 Feature: US1007 kullanici amazonda istedigi kelimeleri aratir
-
 
   Scenario Outline: TC12 amazonda listedeki elementleri aratma
     Given kullanici "amazonUrl" sayfasinda

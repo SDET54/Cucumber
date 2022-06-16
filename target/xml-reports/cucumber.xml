@@ -1,6 +1,151 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="28.422">
-    <testcase classname="US1012 Kullanici register yapabilmeli" name="TC17 kullanici uygun datalarla register olabilmeli" time="27.913">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="15" time="410.625">
+    <testcase classname="US1002 Kullanici ortak adimlari Background ile calistirir" name="TC04 amazon nutella arama" time="53.829">
+        <system-out>
+            <![CDATA[Given kullanici amazon anasayfasinda........................................passed
+And kullanici Nutella icin arama yapar......................................passed
+Then sonuclarin Nutella icerdigini test eder................................passed
+And sayfayi kapatir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1002 Kullanici ortak adimlari Background ile calistirir" name="TC05 amazon java arama" time="28.554">
+        <system-out>
+            <![CDATA[Given kullanici amazon anasayfasinda........................................passed
+And kullanici Java icin arama yapar.........................................passed
+Then sonuclarin Java icerdigini test eder...................................passed
+And sayfayi kapatir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1002 Kullanici ortak adimlari Background ile calistirir" name="TC06 amazon iphone arama" time="32.587">
+        <system-out>
+            <![CDATA[Given kullanici amazon anasayfasinda........................................passed
+And kullanici Iphone icin arama yapar.......................................passed
+Then sonuclarin Iphone icerdigini test eder.................................passed
+And sayfayi kapatir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1004 kullanici parametre ile configuration file'i kullanabilmeli" name="TC07 configuration properties dosyasindan parametre kullanimi" time="43.605">
+        <system-out>
+            <![CDATA[Given kullanici "techproeducationUrl" sayfasinda............................passed
+Then kullanici 3 sn bekler..................................................passed
+And url'in "techpro" icerdigini test eder...................................passed
+Then sayfayi kapatir........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1006 yanlis bilgilerle siteye giris yapilamaz" name="TC09 yanlis password ile giris yapilamaz" time="20.637">
+        <system-out>
+            <![CDATA[Given kullanici "hMcUrl" sayfasinda.........................................passed
+Then Log in yazisina tiklar.................................................passed
+And gecerli username girer..................................................passed
+And gecersiz password girer.................................................passed
+And Login butonuna basar....................................................passed
+Then sayfaya giris yapilamadigini kontrol eder..............................passed
+And sayfayi kapatir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1006 yanlis bilgilerle siteye giris yapilamaz" name="TC10 yanlis kullanici adi ile giris yapilamaz" time="19.498">
+        <system-out>
+            <![CDATA[Given kullanici "hMcUrl" sayfasinda.........................................passed
+Then Log in yazisina tiklar.................................................passed
+And gecersiz username girer.................................................passed
+And gecerli password girer..................................................passed
+And Login butonuna basar....................................................passed
+Then sayfaya giris yapilamadigini kontrol eder..............................passed
+And sayfayi kapatir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1006 yanlis bilgilerle siteye giris yapilamaz" name="TC11 yanlis kullanici adi ve yanlis sifre ile giris yapilamaz" time="17.435">
+        <system-out>
+            <![CDATA[Given kullanici "hMcUrl" sayfasinda.........................................passed
+Then Log in yazisina tiklar.................................................passed
+And gecersiz username girer.................................................passed
+And gecersiz password girer.................................................passed
+And Login butonuna basar....................................................passed
+Then sayfaya giris yapilamadigini kontrol eder..............................passed
+And sayfayi kapatir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1008 kullanici farkli yanlis sifre ve kullanici adi ile giris yapamaz" name="TC13 yanlis kullanici adi ve sifrelerle ile giris yapilamaz" time="18.044">
+        <system-out>
+            <![CDATA[Given kullanici "hMcUrl" sayfasinda.........................................passed
+Then Log in yazisina tiklar.................................................passed
+And gecersiz username icin "Manager5" girer.................................passed
+And gecersiz password icin "Manager5!"girer.................................passed
+And Login butonuna basar....................................................passed
+Then sayfaya giris yapilamadigini kontrol eder..............................passed
+And sayfayi kapatir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1008 kullanici farkli yanlis sifre ve kullanici adi ile giris yapamaz" name="TC13 yanlis kullanici adi ve sifrelerle ile giris yapilamaz 2" time="22.106">
+        <system-out>
+            <![CDATA[Given kullanici "hMcUrl" sayfasinda.........................................passed
+Then Log in yazisina tiklar.................................................passed
+And gecersiz username icin "Manager6" girer.................................passed
+And gecersiz password icin "Manager6!"girer.................................passed
+And Login butonuna basar....................................................passed
+Then sayfaya giris yapilamadigini kontrol eder..............................passed
+And sayfayi kapatir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1008 kullanici farkli yanlis sifre ve kullanici adi ile giris yapamaz" name="TC13 yanlis kullanici adi ve sifrelerle ile giris yapilamaz 3" time="17.779">
+        <system-out>
+            <![CDATA[Given kullanici "hMcUrl" sayfasinda.........................................passed
+Then Log in yazisina tiklar.................................................passed
+And gecersiz username icin "Manager7" girer.................................passed
+And gecersiz password icin "Manager7!"girer.................................passed
+And Login butonuna basar....................................................passed
+Then sayfaya giris yapilamadigini kontrol eder..............................passed
+And sayfayi kapatir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1008 kullanici farkli yanlis sifre ve kullanici adi ile giris yapamaz" name="TC13 yanlis kullanici adi ve sifrelerle ile giris yapilamaz 4" time="22.008">
+        <system-out>
+            <![CDATA[Given kullanici "hMcUrl" sayfasinda.........................................passed
+Then Log in yazisina tiklar.................................................passed
+And gecersiz username icin "Manager8" girer.................................passed
+And gecersiz password icin "Manager8!"girer.................................passed
+And Login butonuna basar....................................................passed
+Then sayfaya giris yapilamadigini kontrol eder..............................passed
+And sayfayi kapatir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1008 kullanici farkli yanlis sifre ve kullanici adi ile giris yapamaz" name="TC13 yanlis kullanici adi ve sifrelerle ile giris yapilamaz 5" time="24.997">
+        <system-out>
+            <![CDATA[Given kullanici "hMcUrl" sayfasinda.........................................passed
+Then Log in yazisina tiklar.................................................passed
+And gecersiz username icin "Manager9" girer.................................passed
+And gecersiz password icin "Manager9!"girer.................................passed
+And Login butonuna basar....................................................passed
+Then sayfaya giris yapilamadigini kontrol eder..............................passed
+And sayfayi kapatir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1010 herokuapp Delete testi" name="TC15 herokuapp'dan delete butonu calismali" time="36.22">
+        <system-out>
+            <![CDATA[Given kullanici "herokuappUrl" sayfasinda...................................passed
+And add element butonuna basar..............................................passed
+And kullanici 3 sn bekler...................................................passed
+Then Delete butonu gorunur oluncaya kadar bekler............................passed
+And Delete butonunun gorunur oldugunu test eder.............................passed
+Then Delete butonuna basar..................................................passed
+And Delete butonunun gorunmedigini test eder................................passed
+And sayfayi kapatir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1012 Kullanici register yapabilmeli" name="TC17 kullanici uygun datalarla register olabilmeli" time="25.341">
         <system-out>
             <![CDATA[Given kullanici "automationUrl" sayfasinda..................................passed
 And user sign in linkine tiklar.............................................passed
@@ -9,6 +154,19 @@ And Create an Account butonuna basar........................................pass
 And user kisisel bilgilerini ve iletisim bilgilerini girer..................passed
 And user Register butonuna basar............................................passed
 Then hesap olustugunu dogrular..............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Tutorialsninja Phones" name="TC00 kullanici tutorialsninja sayfasinda telefonlari kontrol eder" time="26.289">
+        <system-out>
+            <![CDATA[Given Navigate to tutorialsninja............................................passed
+Then click on Phones & PDAs.................................................passed
+And get the brandName of phones.............................................passed
+Then click on add to button for all elements................................passed
+Then click on black total added cart button.................................passed
+And get the names of list from the cart.....................................passed
+And compare the names from displaying list and cart list....................passed
+And close page..............................................................passed
 ]]>
         </system-out>
     </testcase>

@@ -1,5 +1,5 @@
+@tekrar2
 Feature: US1005 dogru kullanici adi ve sifre ile giris yapilabilmeli
-
 
   Scenario: TC08 positive login test
     Given kullanici "hMcUrl" sayfasinda
